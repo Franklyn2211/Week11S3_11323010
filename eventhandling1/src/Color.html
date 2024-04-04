@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencet Abangkuh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="colorChangeContainer">
+        <h1 id="colorChangeText">Pencet Abangkuh</h1>
+    </div>
+
+    <script>
+        const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
+        const colorChangeText = document.getElementById('colorChangeText');
+
+        colorChangeText.addEventListener('click', function () {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            this.style.color = randomColor;
+        });
+    </script>
+</body>
+
+</html>
